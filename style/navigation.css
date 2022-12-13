@@ -1,0 +1,149 @@
+body{
+    position: relative;
+        }
+        header{
+            background-image: url("../image/cabin.webp");
+            position: relative;
+            width:100%;
+            height:100%;
+            left:0;
+            padding-top:50px;
+            margin-bottom:37px;
+            font-size:1.4rem;
+            background-size: cover;
+            background-position: center bottom;
+        }
+    @font-face {
+        font-family: signpainter;
+        src: url("SignPainter.ttf");
+    }
+        header h1, h2{
+            display: none;
+            text-align: center;
+            font-family: "signpainter", helvetica;
+            font-weight: 400;
+            color:#eee;
+        }
+        header h1{
+            font-size:4.8rem;
+            margin:20px 0 0;
+        }
+        header h2{
+            font-family: helvetica, Arial,  sans-serif;
+            font-size: 1.4rem;
+        }
+    header nav{
+        text-align: center;
+    }
+        nav ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            width: 100%;
+           
+        }
+        nav ul li{
+            list-style-type: none;
+            width:40%;
+            
+        }
+    
+        nav a{
+            height: 100%;
+            display: block;
+            text-decoration: none;
+            color:#333;   
+            text-transform: uppercase;
+        }
+    
+       .icon{
+            background-image:url("../image/nav.webp");
+            background-repeat: no-repeat;
+            width:100%;
+            position: relative;
+            top:36px;
+            height:115px;
+            display: flex;
+            background-position: center;
+            /* display: flex; */
+        }
+        .navigation{
+        background-color: #efefef;
+        display: block;
+        position: relative;
+        top:37px;
+        /* height: 100%; */
+        padding:10px 20px;
+        }
+ 
+
+    
+
+     /*Narzędzia*/
+     header li .icon{
+         background-position-y: 0;
+     }
+     /*Pojazdy*/
+     header li + li .icon{
+         background-position-y: -130px;
+     }
+     /*Malowania*/
+     header li + li +li .icon{
+         background-position-y: -900px;
+     }
+     /*Bronie*/
+     header li + li +li +li .icon{
+         background-position-y: -260px;
+     }
+     /*Skrypty*/
+     header li + li +li +li+li .icon{
+         background-position-y: -390px;
+     }
+     /*Gracz*/
+     header li + li +li +li+li+li .icon{
+         background-position-y: -520px;
+     }
+     /*Mapy*/
+     header li + li +li +li+li+li+li .icon{
+         background-position-y: -650px;
+     }
+     /*inne*/
+     header li + li +li +li+li+li+li+li .icon{
+         background-position-y: -780px;
+     }
+     /*forum*/
+     header li + li +li +li+li+li+li+li+li .icon{
+         background-position-y: -1035px;
+     }
+     /*Więcej*/
+     header li + li +li +li+li+li+li+li+li+li .icon{
+        background-position-y:-1170px;
+     }
+
+     @media (min-width:767px){
+        header h1, h2{
+            display: block;
+        }
+        nav ul{
+            flex-direction: row;
+            flex-wrap: nowrap;
+            /* width: 100%; */
+        }
+.navigation{
+    border-left: 2px solid white;
+}
+        header li:last-of-type .navigation{
+            border-right:2px solid white;
+        }
+
+
+        li:hover .icon{
+            opacity:0.8;
+            bottom:0;
+           box-sizing: border-box;
+        border-bottom-color:#20ba4e;
+        border-bottom-width: 4px;
+        border-bottom-style: solid;
+        }
+    }
